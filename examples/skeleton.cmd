@@ -41,7 +41,7 @@ rem **************************************************************************
 :lbl_begin
 rem **************************************************************************
 echo Hello World
-if %param_f%==1 set err_msg=Param F specified&&goto lbl_error
+if "%param_f%" == "1" set err_msg=Param F specified&&goto lbl_error
 
 rem Success!
 goto lbl_end
